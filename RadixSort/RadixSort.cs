@@ -22,6 +22,7 @@ namespace RadixSort
         static void RadixSortAlgorithm(int[] arr){
 
             var m = arr.Max();
+            // The loop should be from unit to hunderds digit
             for (int e = 1; m/e > 0; e *= 10)
             {
                 CountSort(arr,e);
