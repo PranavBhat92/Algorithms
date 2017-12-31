@@ -8,7 +8,6 @@ namespace RadixSort
         static void Main(string[] args)
         {
             //int[] arr = { 56, 23, 89, 12, 99, 1, 0, 10 };
-            //int[] arr = { 1, 4, 1, 2, 7, 5, 2 };
             int[] arr = { 170, 45, 75, 90, 802, 24, 2, 66 };
 
             RadixSortAlgorithm(arr);
