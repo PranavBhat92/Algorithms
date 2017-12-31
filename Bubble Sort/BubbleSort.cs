@@ -7,7 +7,9 @@ namespace Bubble_Sort
         static void Main(string[] args)
         {
             int[] arr = { 56, 23, 89, 12, 99, 1, 0, 10 };
+
             BubbleSortAlgorithm(arr);
+
             foreach (var item in arr)
             {
                 Console.WriteLine(item);
