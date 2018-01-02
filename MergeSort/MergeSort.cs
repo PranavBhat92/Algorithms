@@ -30,7 +30,7 @@ namespace MergeSort
 
 
         static void Merge(int[] arr,int p,int q,int r) {
-
+            // If we do int[q-p] instead of int[q-p+1] then we are only subtracting the indexes. To include the qth element, we need to add 1 to q-p.
             int[] lowHalf = new int[q-p+1];
             int[] highHalf = new int[r-q];
 
