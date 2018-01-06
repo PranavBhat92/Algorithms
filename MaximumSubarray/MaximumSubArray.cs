@@ -31,6 +31,8 @@ namespace MaximumSubarray
         {
             if (p == r)
             {
+                Console.WriteLine("Base = " + arr[p]);
+                Console.ReadLine();
                 return new int[] { p, r, arr[p] };
             }
             var q = (p + r) / 2;
@@ -41,14 +43,20 @@ namespace MaximumSubarray
 
             if (LeftArray[2] >= rightArray[2] && LeftArray[2] >= crossArray[2])
             {
+                Console.WriteLine("Left = " + LeftArray[2]);
+                Console.ReadLine();
                 return new int[] { LeftArray[0],LeftArray[1],LeftArray[2]};
             }
             else if(rightArray[2] >= LeftArray[2] && LeftArray[2] >= crossArray[2])
             {
+                Console.WriteLine("Right = " + rightArray[2]);
+                Console.ReadLine();
                 return new int[] { rightArray[0],rightArray[1],rightArray[2]};
             }
             else
             {
+                Console.WriteLine("Cross = " + crossArray[2]);
+                Console.ReadLine();
                 return new int[] { crossArray[0],crossArray[1],crossArray[2]};
             }
         }
@@ -59,7 +67,7 @@ namespace MaximumSubarray
             int maxLeft=-1;
             var sum = 0;
 
-            for (int i = q; i > p; i--)
+            for (int i = q; i >= p; i--)
             {
                 sum += arr[i];
                 if (sum > leftSum) {
@@ -75,13 +83,11 @@ namespace MaximumSubarray
             for (int j =(q+1); j <= r; j++)
             {
                 sum += arr[j];
-
                 if (sum > rightSum) {
                     rightSum = sum;
                     maxRight = j;
                 } 
-            }
-
+            }            
             return new int[] { maxLeft,maxRight,(leftSum+rightSum) };
         }
     }
