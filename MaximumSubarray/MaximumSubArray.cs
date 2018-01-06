@@ -47,7 +47,7 @@ namespace MaximumSubarray
                 Console.ReadLine();
                 return new int[] { LeftArray[0],LeftArray[1],LeftArray[2]};
             }
-            else if(rightArray[2] >= LeftArray[2] && LeftArray[2] >= crossArray[2])
+            else if(rightArray[2] >= LeftArray[2] && rightArray[2] >= crossArray[2])
             {
                 Console.WriteLine("Right = " + rightArray[2]);
                 Console.ReadLine();
