@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadixSort", "RadixSort\Radi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumSubArray", "MaximumSubarray\MaximumSubArray.csproj", "{7746B598-AB8C-4040-ADCD-AEFADDD65D08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumSubArrayBruteForce", "MaximumSubArrayBruteForce\MaximumSubArrayBruteForce.csproj", "{9B87076D-6432-42EA-98FC-7A326B7CA3FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{7746B598-AB8C-4040-ADCD-AEFADDD65D08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7746B598-AB8C-4040-ADCD-AEFADDD65D08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7746B598-AB8C-4040-ADCD-AEFADDD65D08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B87076D-6432-42EA-98FC-7A326B7CA3FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B87076D-6432-42EA-98FC-7A326B7CA3FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B87076D-6432-42EA-98FC-7A326B7CA3FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B87076D-6432-42EA-98FC-7A326B7CA3FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
